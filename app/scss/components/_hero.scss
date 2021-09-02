@@ -1,0 +1,58 @@
+.hero {
+  padding-top: 36px;
+
+  &__title {
+    font: 700 30px / 36px $font;
+    color: $black;
+    margin-bottom: 35px;
+    padding-right: 35px;
+  }
+
+  &__date {
+    font: 400 16px / 19px $font;
+    color: #9C9C9C;
+    margin-bottom: 30px;
+  }
+
+}
+
+.hero-box {
+  position: relative;
+  z-index: 1;
+  &::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.32%, #000000 100%);
+    z-index: 0;
+  }
+  &__decor{
+    left: 18px;
+    right: 18px;
+    bottom: 40px;
+    z-index: 1;
+  }
+  &__title{
+    font: 700 28px / 33px $font;
+    color:$white;
+  }
+  &__subtitle{
+    font: 400 20px / 24px $font;
+    color:$white;
+    margin-bottom: 10px;
+    max-width: 325px;
+  }
+}
+.hero-descr{
+  padding: 44px 5px 30px 0px;
+  &__text{
+    font:400 20px / 24px $font;
+    font-style: italic;
+    &--accent{
+      font-weight: 700;
+    }
+  }
+}
